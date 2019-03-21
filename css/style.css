@@ -1,0 +1,49 @@
+
+
+
+#header-logo {
+    max-width: 200px;
+}
+
+#navbar {
+/*    position: relative;
+    right: 50px;*/
+}
+
+.nav-link {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: black;
+    padding: 8px 8px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+#photo-showcase {
+    background-color: #FFE4E1;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
+}
+
+#parallax {
+    background-image: url('https://placeimg.com/900/600/people/grayscale');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 600px;
+}
+
+#parallax-header {
+    color: white;
+}
+
+#details {
+    height: 800px;
+}
+
+#footer {
+
+}

@@ -3,15 +3,20 @@
 
 #header-logo {
     max-width: 200px;
+    margin-left: calc(50% - 100px);
 }
 
 #navbar {
-/*    position: relative;
-    right: 50px;*/
+
+}
+
+#nav-wrapper {
+    display: inline-block;
+    margin-left: 3%;
 }
 
 .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: black;
     padding: 8px 8px;

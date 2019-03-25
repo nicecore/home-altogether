@@ -1,44 +1,48 @@
 
-
+#header {
+    /* Give us some breathing room while we figure out logo sizing and nav */
+    height: 200px;
+}
 
 #header-logo {
-    max-width: 200px;
-    margin-left: calc(50% - 100px);
+    max-width: 300px;
+    margin-left: calc(50% - 150px);
 }
 
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5001;
     right: 0;
     top: 0;
     background-color: white;
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
+
 }
 
 .sidenav .closebtn {
-    position: absolute;
+/*    position: absolute;
     top: 0;
-    right: 210px;
+    right: 210px;*/
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
     text-decoration: none;
-    color: black;
+    color: #9f9d9d;
 }
 
 
 #nav-wrapper {
     display: inline-block;
-    margin-left: 3%;
+    /*margin-left: 3%;*/
 }
 
 .nav-link {
     font-size: 14px;
     letter-spacing: 2px;
-    color: black;
+    color: #9f9d9d;
     padding: 8px 8px;
 }
 
@@ -46,22 +50,33 @@
     color: black;
 }
 
+.sidenav .nav-link {
+    margin-left: 10px;
+}
+
 #bean-burger {
     display: none;
-    position: fixed;
-    right: 30px;
-    top: 30px;
+    float: right;
+    position: relative;
+    top: -30px;
+    margin-right: 2%;
+    font-size: 35px;
+    cursor: pointer;
+    color: gray;
 }
 
 #photo-showcase {
     background-color: #FFE4E1;
-    padding-top: 3%;
     padding-bottom: 5%;
 
 }
 
+.showcase-photos {
+    max-width: 90%;
+}
+
 #parallax {
-    background-image: url('https://placeimg.com/900/600/people/grayscale');
+    background-image: url('../photos/IMG_0017.JPG');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -80,15 +95,50 @@
 
 }
 
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 5000;
+    opacity: 0;
+    /* Doesn't seem to do anything */
+    transition: all .5s ease-in-out;
+}
+#overlay.active{
+    display: block;
+    opacity: 0.8;
+}
+
+.noScroll {
+    overflow: hidden;
+    position: fixed;
+}
 
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1100px) {
+    /* Hide #nav-wrapper and set beanburger's display to inline 
+    on screens smaller than 1100px */
     #nav-wrapper {
         display: none;
     }
     #bean-burger {
         display: inline;
+    }
+    #header-logo {
+        max-width: 300px;
+        margin-left: calc(50% - 150px);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #header-logo {
+        max-width: 200px;
+        margin-left: calc(50% - 100px);
     }
 }

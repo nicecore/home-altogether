@@ -7,11 +7,11 @@
 function loadNewQuote() {
   // Array of arrays of quotes, authors
   var quotes = [
-    ["Organizing is what you do before you do something, so that when you do it, it is not all mixed up.", "A. A. Milne"],
-    ["Good order is the foundation of all things.", "Edmund Burke"],
-    ["For every minute spent organizing, an hour is earned.", "Benjamin Franklin"],
+    ["Organizing is what you do before you do something, so that when you do it, it is not all mixed up.", "- A. A. Milne"],
+    ["Good order is the foundation of all things.", "- Edmund Burke"],
+    ["For every minute spent organizing, an hour is earned.", "- Benjamin Franklin"],
     ["But everything should be done in a fitting and orderly way.", "1 Corinthians 14:40"],
-    ["A year from now you may wish you had started today.", "Karen Lamb"]
+    ["A year from now you may wish you had started today.", "- Karen Lamb"]
   ]
   // Get a random number
   var randomNumber = Math.floor(Math.random() * (quotes.length));

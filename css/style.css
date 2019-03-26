@@ -1,9 +1,8 @@
 body {
     /* For parallax scrolling */
-    perspective: 1px;
-    transform-style: preserve-3d;
+/*    perspective: 1px;
+    transform-style: preserve-3d;*/
 }
-
 
 #header {
     /* Give us some breathing room while we figure out logo sizing and nav */
@@ -90,17 +89,35 @@ body {
     url('../photos/IMG_0015.JPG');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 600px;
 
-    height: 600px;
 }
 
-#parallax-header {
+#quote {
     color: black;
     font-family: "Gill Sans";
+
+}
+
+#quote-author {
+    font-family: "Gill Sans";
+    text-align: right;
+    width: 70%;
 }
 
 #details {
     height: 300px;
+}
+
+.main-fonts {
+    font-family: "Gill Sans";
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.rules {
+    width: 75%;
+    margin-top: 2rem;
 }
 
 #footer {

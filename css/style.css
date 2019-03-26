@@ -1,3 +1,9 @@
+body {
+    /* For parallax scrolling */
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
 
 #header {
     /* Give us some breathing room while we figure out logo sizing and nav */
@@ -76,7 +82,12 @@
 }
 
 #parallax {
-    background-image: url('../photos/IMG_0017.JPG');
+    background-image:
+      linear-gradient(
+          rgba(238, 249, 255, .67),
+          rgba(238, 249, 255, .67)
+    ),
+    url('../photos/IMG_0015.JPG');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -84,11 +95,12 @@
 }
 
 #parallax-header {
-    color: white;
+    color: black;
+    font-family: "Gill Sans";
 }
 
 #details {
-    height: 800px;
+    height: 300px;
 }
 
 #footer {

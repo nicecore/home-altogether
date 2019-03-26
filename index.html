@@ -7,19 +7,7 @@
     <meta name="author" content="Adam Cameron">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"
      integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-     <script type="text/javascript">
-       function openNav() {
-         document.getElementById("mySidenav").style.width = "250px";
-         document.getElementById("overlay").classList.add("active");
-         document.body.classList.add("noScroll");
-       }
-
-       function closeNav() {
-         document.getElementById("mySidenav").style.width = "0";
-         document.getElementById("overlay").classList.remove("active");
-         document.body.classList.remove("noScroll");
-       }
-     </script>
+     <script type="text/javascript" src="js/scripts.js"></script>
     <title>Home Altogether</title>
 
     <!-- Bootstrap core CSS -->
@@ -29,7 +17,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="loadNewQuote()">
 
     <!-- HEADER -->
 
@@ -45,7 +33,7 @@
     <div class="container-fluid mt-4 pt-4" id="header">
       <div class="row">
         <div class="col-sm">
-          <img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo">
+          <a href="index.html"><img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo"></a>
           <div id="nav-wrapper">
             <ul id="navbar" class="nav m-auto">
               <li class="nav-item">
@@ -78,10 +66,14 @@
             <div class="col-md text-center"><img src="photos/IMG_0004.JPG" alt="" class="img-fluid showcase-photos"></div>
         </div>
     </section>
+
+    <!-- PARALLAX SECTION -->
+
     <section class="container-fluid d-flex" id="parallax">
         <div class="row m-auto align-items-center">
             <div class="col-sm text-center">
-                <h1 id="parallax-header">Home Organization Bliss</h1>
+                <h1 id="quote"></h1>
+                <h3 id="quote-author"></h3>
             </div>
         </div>
     </section>

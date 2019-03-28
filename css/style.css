@@ -4,6 +4,19 @@ body {
     transform-style: preserve-3d;*/
 }
 
+/*.row {
+    border: 1px solid red;
+}
+
+.col, .col-md {
+    border: 2px dotted blue;
+}*/
+
+
+#logo-link {
+
+}
+
 #header {
     /* Give us some breathing room while we figure out logo sizing and nav */
     height: 200px;
@@ -41,14 +54,14 @@ body {
 
 #nav-wrapper {
     display: inline-block;
-    /*margin-left: 3%;*/
+    margin-left: 2%;
 }
 
 .nav-link {
     font-size: 14px;
     letter-spacing: 2px;
     color: #9f9d9d;
-    padding: 8px 8px;
+    padding: 8px 4px;
 }
 
 .nav-link:hover {
@@ -70,14 +83,18 @@ body {
     color: gray;
 }
 
-#photo-showcase {
-    background-color: #FFE4E1;
+.main-background {
+    background-color: #fff6fb;
+}
+
+#photo-showcase, #details {
+    background-color: #fff6fb;
     padding-bottom: 5%;
 
 }
 
 .showcase-photos {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 #parallax {
@@ -106,7 +123,7 @@ body {
 }
 
 #details {
-    height: 300px;
+    min-height: 300px;
 }
 
 .main-fonts {
@@ -121,7 +138,9 @@ body {
 }
 
 #footer {
-
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 #overlay {
@@ -142,19 +161,59 @@ body {
     opacity: 0.8;
 }
 
+#about-main {
+    min-height: 500px;
+}
+
+#about-main-photo {
+    width: 90%;
+}
+
+#about-us {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+#about-paragraph {
+    width: 75%;
+}
+
+#cards {
+    margin-top: 150px;
+}
+
+.profile-cards {
+    
+}
+
+.card-wrapper {
+    width: 75%;
+}
+
+.profile-pics {
+    position: relative;
+    z-index: 9999;
+    border-radius: 50%;
+    margin-bottom: -30px;
+
+}
+
 .noScroll {
     overflow: hidden;
     position: fixed;
+}
+.about-hrs {
+    border-top: 1px solid #8c8b8b;
 }
 
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1121px) {
     /* Hide #nav-wrapper and set beanburger's display to inline 
     on screens smaller than 1100px */
     #nav-wrapper {
-        display: none;
+        display: none !important;
     }
     #bean-burger {
         display: inline;
@@ -165,9 +224,28 @@ body {
     }
 }
 
+@media screen and (max-width: 956px) {
+    #about-main-photo {
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .showcase-photos {
+        width: 500px;
+        margin-bottom: 5%;
+    }
+    .showcase-column {
+        text-align: center !important;
+    }
+}
+
 @media screen and (max-width: 440px) {
     #header-logo {
         max-width: 200px;
         margin-left: calc(50% - 100px);
+    }
+    #about-paragraph {
+        width: 95%;
     }
 }

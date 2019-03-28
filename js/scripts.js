@@ -20,7 +20,6 @@ function loadNewQuote() {
   // Plug quote and author into the #quote and #quote author
   document.getElementById('quote').innerHTML = quote[0]
   document.getElementById('quote-author').innerHTML = quote[1]
-
 }
 
 

@@ -1,16 +1,14 @@
-body {
-    /* For parallax scrolling */
-/*    perspective: 1px;
-    transform-style: preserve-3d;*/
+
+
+#leah-ul {
+    list-style-type: none;
 }
 
-/*.row {
-    border: 1px solid red;
+.asterisk {
+    position: relative;
+    top: 3px;
 }
 
-.col, .col-md {
-    border: 2px dotted blue;
-}*/
 
 
 #logo-link {
@@ -94,7 +92,7 @@ body {
 }
 
 .showcase-photos {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 #parallax {
@@ -167,6 +165,7 @@ body {
 
 #about-main-photo {
     width: 90%;
+    max-width: 600px;
 }
 
 #about-us {
@@ -174,20 +173,27 @@ body {
     margin-bottom: 0;
 }
 
-#about-paragraph {
-    width: 75%;
+#subpage-paragraph {
+    width: 65%;
 }
 
 #cards {
-    margin-top: 150px;
+    padding-top: 10vh;
 }
 
 .profile-cards {
     
 }
 
+#image-cropper {
+    border-radius: 25px;
+}
+
 .card-wrapper {
     width: 75%;
+}
+
+.card-body {
 }
 
 .profile-pics {
@@ -206,6 +212,20 @@ body {
     border-top: 1px solid #8c8b8b;
 }
 
+/* SERVICES STYLES */
+
+.services-icons {
+    font-size: 3rem;
+    color: grey;
+}
+
+#services-columns {
+    padding-top: 10vh !important;
+}
+
+.pricing-text {
+    width: 50%;
+}
 
 /* MEDIA QUERIES */
 
@@ -221,6 +241,12 @@ body {
     #header-logo {
         max-width: 300px;
         margin-left: calc(50% - 150px);
+    }
+}
+
+@media screen and (max-width: 978px) {
+    #services-columns {
+
     }
 }
 
@@ -245,7 +271,7 @@ body {
         max-width: 200px;
         margin-left: calc(50% - 100px);
     }
-    #about-paragraph {
+    #subpage-paragraph {
         width: 95%;
     }
 }

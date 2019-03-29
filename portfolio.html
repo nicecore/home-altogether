@@ -9,19 +9,14 @@
      integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
      <script type="text/javascript" src="js/scripts.js"></script>
     <title>Home Altogether</title>
-
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body onload="loadNewQuote()">
 
-    <!------- HEADER ------->
-
-    <!-- SideNav -->
+  <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="nav-link" href="index.html">Home</a>
@@ -35,7 +30,7 @@
     <div class="container-fluid mt-4 pt-4" id="header">
       <div class="row">
         <div class="col-sm">
-          <a id="logo-link" href="index.html"><img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo"></a>
+          <a href="index.html"><img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo"></a>
           <div id="nav-wrapper">
             <ul id="navbar" class="nav m-auto">
               <li class="nav-item">
@@ -60,46 +55,48 @@
       </div>
     </div>
 
-    <!------- PICTURE SHOWCASE ------->
-
-    <section class="container-fluid" id="photo-showcase">
-        <div class="row">
-            <div class="col-md text-center showcase-column pr-0"><img src="photos/IMG_0008.JPG" alt="" class="showcase-photos"></div>
-            <div class="col-md text-center showcase-column pl-0"><img src="photos/IMG_0004.JPG" alt="" class="showcase-photos"></div>
-        </div>
-    </section>
-
-    <!------- PARALLAX SECTION ------->
-
-    <section class="container-fluid d-flex" id="parallax">
-        <div class="row m-auto align-items-center">
-            <div class="col-sm text-center">
-                <em><h1 id="quote" class="pb-3"></h1></em>
-                <h3 id="quote-author"></h3>
+    <section class="container-fluid main-background">
+        <div class="row" id="row-1">
+          <div class="col text-center main-fonts">
+            <p class="pt-5 display-4" id="about-us">PORTFOLIO</p>
+            <div class="row" id="row-2">
+              <div class="col"><hr class="about-hrs" align="right" width="60%"></div>
+              <div class="col-auto asterisk">✻</div>
+              <div class="col"><hr class="about-hrs" align="left" width="60%"></div>
             </div>
+          </div>
         </div>
     </section>
 
-    
-    <!------- DETAILS SECTION ------->
-
-    <section class="container-fluid" id="details">
-        <div class="row">
-            <div class="col-sm text-center pt-5">
-              <h1 id="details-header" class="main-fonts">HOME ALTOGETHER</h1>
-              <h3 class="main-fonts pt-4">✻ Beautiful, maintanable, and individually tailored organizational solutions ✻</h3>
-              <hr class="rules">
-              <h4 class="main-fonts">We are Maribeth and Leah, sisters-in-law and friends with a passion for organization.</h4>
-              <hr class="rules">
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md text-right showcase-column"><img src="photos/IMG_0011.JPG" alt="" class="showcase-photos" width=450></div>
-            <div class="col-md text-left showcase-column"><img src="photos/IMG_0018.JPG" alt="" class="showcase-photos" width=450></div>
-        </div>
+    <section class="container-fluid main-background py-4">
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="row pb-4">
+                  <a href="photos/IMG_0002.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0002.jpg" class="img-fluid">
+                  </a>
+                  <a href="photos/IMG_0007.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0007.jpg" class="img-fluid">
+                  </a>
+                  <a href="photos/IMG_0015.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0015.jpg" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="photos/IMG_0004.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0004.jpg" class="img-fluid">
+                  </a>
+                  <a href="photos/IMG_0008.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0008.jpg" class="img-fluid">
+                  </a>
+                  <a href="photos/IMG_0003.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="photos/IMG_0003.jpg" class="img-fluid">
+                  </a>
+              </div>
+          </div>
+      </div>
     </section>
 
-    <!------- FOOTER ------->
     <footer class="container-fluid" id="footer">
       <div class="row">
         <div class="col-sm text-center">
@@ -109,14 +106,18 @@
         </div>
       </div>
     </footer>
-    
+
     <div id="overlay" onclick="closeNav()"></div>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
   </body>
 </html>

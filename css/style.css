@@ -1,8 +1,16 @@
-
-
-#leah-ul {
-    list-style-type: none;
+html {
+    height: 100%;
 }
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+.container-fluid {
+    max-width: 90%;
+    /* Why did I do this again? */
+
+}
+
 
 .asterisk {
     position: relative;
@@ -18,6 +26,9 @@
 #header {
     /* Give us some breathing room while we figure out logo sizing and nav */
     height: 200px;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #header-logo {
@@ -86,13 +97,12 @@
 }
 
 #photo-showcase, #details {
-    background-color: #fff6fb;
     padding-bottom: 5%;
 
 }
 
 .showcase-photos {
-    max-width: 90%;
+    max-width: 85%;
 }
 
 #parallax {
@@ -104,8 +114,11 @@
     url('../photos/IMG_0015.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 600px;
+    height: 550px;
+}
 
+#parallax-container {
+    min-height: 600px;
 }
 
 #quote {
@@ -127,7 +140,10 @@
 .main-fonts {
     font-family: "Gill Sans";
     font-weight: lighter;
-    letter-spacing: 1px;
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
 }
 
 .rules {
@@ -159,9 +175,6 @@
     opacity: 0.8;
 }
 
-#about-main {
-    min-height: 500px;
-}
 
 #about-main-photo {
     width: 90%;
@@ -169,20 +182,20 @@
 }
 
 #about-us {
-    font-size: 2.5rem;
     margin-bottom: 0;
 }
 
 #subpage-paragraph {
-    width: 65%;
+    max-width: 500px;
+    /*font-size: 16px;*/
 }
 
 #cards {
     padding-top: 10vh;
 }
 
-.profile-cards {
-    
+.profile-text {
+    font-size: 14px;
 }
 
 #image-cropper {
@@ -190,7 +203,9 @@
 }
 
 .card-wrapper {
-    width: 75%;
+    width: 85%;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .card-body {
@@ -210,6 +225,8 @@
 }
 .about-hrs {
     border-top: 1px solid #8c8b8b;
+    max-width: 250px;
+    min-width: 80px;
 }
 
 /* SERVICES STYLES */
@@ -219,17 +236,48 @@
     color: grey;
 }
 
-#services-columns {
-    padding-top: 10vh !important;
+.services-cols {
+
 }
 
-.pricing-text {
-    width: 50%;
+.services-separator {
+    height: 100px;
+    border-left: 3px solid grey;
+}
+
+#service-col-1 {
+    border-right: 1px solid grey;
+}
+
+#service-col-2 {
+
+}
+
+.service-paras {
+    max-width: 300px;
+    min-width: 260px;
+}
+
+#pricing-ul {
+    text-align: left;
+    list-style: inside;
+    padding-left: 0;
+    width: 450px;
+
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1121px) {
+@media screen and (min-width: 1300px) {
+    #mb-profile-wrapper {
+        margin-right: 4% !important;
+    }
+    #leah-profile-wrapper {
+        margin-left: 4% !important;
+    }
+}
+
+@media screen and (max-width: 1080px) {
     /* Hide #nav-wrapper and set beanburger's display to inline 
     on screens smaller than 1100px */
     #nav-wrapper {
@@ -241,6 +289,19 @@
     #header-logo {
         max-width: 300px;
         margin-left: calc(50% - 150px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about-profile-cards-div {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card-wrapper {
+
+        width: 100%;
+        min-width: 288px;
     }
 }
 

@@ -30,40 +30,42 @@
     </div>
     
     <!-- Header -->
-    <div class="container-fluid mt-4 pt-4" id="header">
-      <div class="row">
-        <div class="col-sm">
-          <a href="index.html"><img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo"></a>
-          <div id="nav-wrapper">
-            <ul id="navbar" class="nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+    <section class="">
+      <div class="container-fluid mt-4 pt-4" id="header">
+        <div class="row">
+          <div class="col-sm">
+            <a href="index.html"><img src="img/MAIN_BLACK.png" alt="Home Altogether logo" id="header-logo"></a>
+            <div id="nav-wrapper">
+              <ul id="navbar" class="nav m-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <span id="bean-burger" onclick="openNav()">&#9776;</span>
           </div>
-          <span id="bean-burger" onclick="openNav()">&#9776;</span>
         </div>
       </div>
-    </div>
-
+    </section>
     <!-- ABOUT US SECTION -->
-    <section class="container-fluid main-background" id="about-main">
-        <div class="row" id="row-1">
+    <section class="main-background">
+      <div class="container-fluid">
+        <div class="row">
           <div class="col text-center main-fonts">
             <p class="pt-5 display-4" id="about-us">ABOUT US</p>
-            <div class="row" id="row-2">
+            <div class="row">
               <div class="col"><hr class="about-hrs" align="right" width="60%"></div>
               <div class="col-auto asterisk">✻</div>
               <div class="col"><hr class="about-hrs" align="left" width="60%"></div>
@@ -74,43 +76,19 @@
             <img src="photos/IMG_0001.JPG" alt="" id="about-main-photo" class="pt-5">
           </div>
         </div>
+      </div>
     </section>
 
-
-<!--     <section class="container-fluid main-background" id="about-main">
-        <div class="row">
-          <div class="col-md">
-            <div class="row">
-              <div class="col text-center main-fonts"><p class="pt-5 display-4" id="about-us">ABOUT US</p></div>
-            </div>
-            <div class="row">
-                <div class="col"><hr class="about-hrs" align="right" width="60%"></div>
-                <div class="col-auto">✻</div>
-                <div class="col"><hr class="about-hrs" align="left" width="60%"></div>
-            </div>
-            <div class="row">
-              <div class="col text-justify main-fonts">
-                <p class="m-auto" id="subpage-paragraph">
-                  Hello! We are Maribeth and Leah – the founders of <strong>Home Altogether</strong>.  We are sisters-in-law and friends from Dallas, TX. Over the past few years, we have discovered that not only do we have a shared interest in home organization, we have complementary skills and talents that make us a fantastic team. Plus we have a whole lot of fun together! Read on to learn a little more about each of us.    
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md text-center showcase-column">
-            <img src="photos/IMG_0001.JPG" alt="" id="about-main-photo" class="pt-5">
-          </div>
-        </div>
-      </section> -->
-
-      <section class="container-fluid main-background">
-        <div class="row" id="cards">
-          <div class="col text-center pb-5">
-            <div class="card-wrapper float-right mr-3">
+    <section class="main-background">
+      <div class="container-fluid" id="about-profile-cards-div">
+        <div class="row no-gutters" id="cards">
+          <div class="col-lg-6 text-center pb-5">
+            <div class="card-wrapper" id="mb-profile-wrapper">
               <img src="photos/maribeth.JPG" alt="Maribeth Cameron" width="65%" class="profile-pics">
               <div class="card m-auto profile-cards">
                 <div class="card-body">
                   <h5 class="card-title mt-5 main-fonts">Maribeth Cameron</h5>
-                  <ul class="card-text main-fonts text-left">
+                  <ul class="card-text main-fonts text-left profile-text">
                     <li><strong>Hometown:</strong> Ft. Worth, TX</li>
                     <li><strong>Personality Type:</strong> ISFJ</li>
                     <li><strong>Enneagram Type:</strong> 1-The Reformer</li>
@@ -128,24 +106,23 @@
               </div>
             </div>
           </div>
-
-          <div class="col text-center pb-5">
-            <div class="card-wrapper float-left mr-3">
+          <div class="col-lg-6 text-center pb-5">
+            <div class="card-wrapper" id="leah-profile-wrapper">
               <img src="photos/leah.JPG" alt="Leah Williams" width="65%" class="profile-pics">
               <div class="card m-auto profile-cards">
                 <div class="card-body">
                   <h5 class="card-title mt-5 main-fonts">Leah Williams</h5>
-                  <ul id="leah-ul" class="card-text main-fonts text-left">
-                    <li>Hometown: Dallas, TX</li>
-                    <li>Personality Type: ENFJ</li>
-                    <li>Enneagram Type: 8-The Challenger</li>
-                    <li>Degree: Family Studies and Child Development</li>
-                    <li>Alma Mater: Abilene Christian University</li>
-                    <li>Husband: Grant</li>
-                    <li>Kids: Thomas</li>
-                    <li>Pets: Teddy and Willie Nelson</li>
-                    <li>Favorite Things: Walking outside, a nice cold beer, hiking in the mountains, spending time with family</li>
-                    <li>Least Favorite Things: Being told I can’t do something</li>
+                  <ul class="card-text main-fonts text-left profile-text">
+                    <li><strong>Hometown:</strong> Dallas, TX</li>
+                    <li><strong>Personality Type:</strong> ENFJ</li>
+                    <li><strong>Enneagram Type:</strong> 8-The Challenger</li>
+                    <li><strong>Degree:</strong> Family Studies and Child Development</li>
+                    <li><strong>Alma Mater:</strong> Abilene Christian University</li>
+                    <li><strong>Husband:</strong> Grant</li>
+                    <li><strong>Kids:</strong> Thomas</li>
+                    <li><strong>Pets:</strong> Teddy and Willie Nelson</li>
+                    <li><strong>Favorite Things:</strong> Walking outside, a nice cold beer, hiking in the mountains, spending time with family</li>
+                    <li><strong>Least Favorite Things:</strong> Being told I can’t do something</li>
                     <li>Favorite Color: Green</li>
                     <li>Favorite Place: Amsterdam</li>
                   </ul>
@@ -154,7 +131,8 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <footer class="container-fluid" id="footer">
       <div class="row">

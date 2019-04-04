@@ -258,12 +258,26 @@ body {
     min-width: 260px;
 }
 
+.process-wrapper {
+    max-width: 550px;
+    border: 3px solid grey;
+    border-radius: 2%;
+}
+
+
 #pricing-ul {
     text-align: left;
     list-style: inside;
     padding-left: 0;
     width: 450px;
 
+}
+
+.portfolio-thumb {
+    max-width: 380px;
+    max-height: 285px;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 /* MEDIA QUERIES */
@@ -275,6 +289,10 @@ body {
     #leah-profile-wrapper {
         margin-left: 4% !important;
     }
+}
+
+@media screen and (min-width: 1170px) {
+
 }
 
 @media screen and (max-width: 1080px) {

@@ -272,13 +272,11 @@ body {
     width: 450px;
 
 }
-
-.portfolio-thumb {
-    max-width: 380px;
-    max-height: 285px;
-    overflow: auto;
-    overflow-y: hidden;
+.portfolio-image {
+    display: block;
 }
+
+
 
 /* MEDIA QUERIES */
 

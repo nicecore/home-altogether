@@ -1,7 +1,4 @@
 
-
-
-
 // RANDOM QUOTE GENERATOR
 // Load a new quote from a list of quotes and plug it into the DOM
 function loadNewQuote() {

@@ -81,6 +81,20 @@ body {
     margin-left: 10px;
 }
 
+#insta {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: grey;
+}
+
+.insta-image {
+    border: 6px solid white;
+    border-radius: 2px;
+}
+
 #bean-burger {
     display: none;
     float: right;
@@ -186,7 +200,7 @@ body {
 }
 
 #subpage-paragraph {
-    max-width: 500px;
+    max-width: 550px;
     /*font-size: 16px;*/
 }
 

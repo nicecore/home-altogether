@@ -395,6 +395,15 @@ body {
     }
 }
 
+@media screen and (max-width: 650px) {
+    #index-subtitle {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+
+
 @media screen and (max-width: 440px) {
     #subpage-paragraph {
         width: 95%;

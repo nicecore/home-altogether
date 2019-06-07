@@ -135,6 +135,7 @@ body {
 
 .showcase-photos {
     max-width: 85%;
+    opacity: .7;
 }
 
 .index-buttons {

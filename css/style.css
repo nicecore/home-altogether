@@ -25,7 +25,7 @@ body {
 
 #header-logo {
     max-width: 300px;
-    margin-left: calc(50% - 150px);
+    margin-left: calc(50% - 75px);
 }
 
 .sidenav {
@@ -57,7 +57,7 @@ body {
 }
 
 .nav-link {
-    font-size: 14px;
+    font-size: 1rem;
     letter-spacing: 2px;
     color: #9f9d9d;
     padding: 8px 4px;
@@ -81,6 +81,10 @@ body {
     color: grey;
 }
 
+.index-round-img {
+    border-radius: 50%;
+}
+
 .insta-image {
     border: 6px solid white;
     border-radius: 2px;
@@ -91,14 +95,14 @@ body {
     float: right;
     position: relative;
     top: -30px;
-    margin-right: 2%;
+    margin-right: 5%;
     font-size: 35px;
     cursor: pointer;
     color: gray;
 }
 
 .main-background {
-    background-color: #fff6fb;
+    background-color: #EFEAE9;
 }
 
 #photo-showcase, #details {
@@ -195,10 +199,6 @@ body {
     /*font-size: 16px;*/
 }
 
-#cards {
-    padding-top: 10vh;
-}
-
 .profile-text {
     font-size: 1rem;
     list-style: none;
@@ -214,7 +214,10 @@ body {
     margin: 0 auto;
 }
 
-.card-body {
+
+
+#about-profile-cards-div {
+    padding-top: 100px;
 }
 
 .profile-pics {
@@ -308,10 +311,7 @@ body {
     #bean-burger {
         display: inline;
     }
-    #header-logo {
-        max-width: 300px;
-        margin-left: calc(50% - 150px);
-    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -350,10 +350,7 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-    #header-logo {
-        max-width: 200px;
-        margin-left: calc(50% - 100px);
-    }
+
     #subpage-paragraph {
         width: 95%;
     }

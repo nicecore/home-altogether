@@ -354,7 +354,6 @@ body {
     #bean-burger {
         display: inline;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -367,6 +366,13 @@ body {
 
         width: 100%;
         min-width: 288px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .index-paras {
+        height: 150px;
+        width: 50% !important;
     }
 }
 
@@ -390,7 +396,6 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-
     #subpage-paragraph {
         width: 95%;
     }

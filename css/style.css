@@ -376,7 +376,7 @@ body {
 
 @media screen and (max-width: 991px) {
     .index-paras {
-        height: 150px;
+        height: auto;
         width: 50% !important;
     }
 }

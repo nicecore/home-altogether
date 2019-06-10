@@ -144,9 +144,10 @@ body {
 }
 
 .index-buttons {
-    padding: 15px 25px;
+    padding: 15px 20px;
     border: 2px solid #4d4d4d;
     transition: all 300ms;
+    background-color: inherit;
 }
 
 .index-buttons:hover {
@@ -233,7 +234,7 @@ body {
 }
 
 
-#about-main-photo {
+.about-main-photo {
     width: 90%;
     max-width: 600px;
 }
@@ -242,9 +243,8 @@ body {
     margin-bottom: 0;
 }
 
-#subpage-paragraph {
+.subpage-paragraph {
     max-width: 550px;
-    /*font-size: 16px;*/
 }
 
 .profile-text {
@@ -293,10 +293,6 @@ body {
     color: grey;
 }
 
-.services-cols {
-
-}
-
 .services-separator {
     height: 100px;
     border-left: 3px solid grey;
@@ -304,10 +300,6 @@ body {
 
 #service-col-1 {
     border-right: 1px solid grey;
-}
-
-#service-col-2 {
-
 }
 
 .service-paras {
@@ -331,6 +323,16 @@ body {
 }
 .portfolio-image {
     display: block;
+}
+
+/* CONTACT STYLES */
+
+#contact-form {
+    max-width: 500px;
+}
+
+#contact-main-photo {
+    max-width: 450px;
 }
 
 
@@ -397,6 +399,10 @@ body {
     }
     .showcase-column {
         text-align: center !important;
+    }
+
+    #contact-form {
+        margin: 0 auto;
     }
 }
 

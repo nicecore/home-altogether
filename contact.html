@@ -69,6 +69,88 @@
             <div class="col-auto asterisk">✻</div>
             <div class="col"><hr class="about-hrs" align="left" width="60%"></div>
           </div>
+          <p class="m-auto text-left subpage-paragraph pt-4 pb-5"><strong>We want to hear your story!</strong> Please reach out to us and tell us where we can work our home organizing magic. If you have a preferred contact method other than e-mail, please let us know in your message!</p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <img src="photos/IMG_0013.JPG" id="contact-main-photo" alt="" class="img-fluid pb-4 about-main-photo">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <form novalidate action="" id="contact-form" class="text-left needs-validation">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="firstName"><em>First Name</em></label>
+                      <input required type="text" name="firstName" class="form-control" id="firstName">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="lastName"><em>Last Name</em></label>
+                      <input required type="text" name="lastName" class="form-control" id="lastName">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email"><em>E-mail</em></label>
+                  <input required type="email" name="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group">
+                  <label for="firstName"><em>Message</em></label>
+                  <textarea required class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                  <small>If you have a preferred contact method other than e-mail, please let us know!</small>
+                </div>
+                <div class="row pt-4 pb-5">
+                  <div class="col">
+                    <div class="form-group">
+                      <input type="submit" class="index-buttons">
+                      <input type="reset" class="index-buttons ml-2">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="col">
+              <!-- <form novalidate action="" id="contact-form" class="text-left needs-validation">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="firstName"><em>First Name</em></label>
+                      <input required type="text" name="firstName" class="form-control" id="firstName">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="lastName"><em>Last Name</em></label>
+                        <input required type="text" name="lastName" class="form-control" id="lastName">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email"><em>E-mail</em></label>
+                  <input required type="email" name="email" class="form-control" id="firstName">
+                </div>
+                <div class="form-group">
+                  <label for="firstName"><em>Message</em></label>
+                  <textarea required class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                  <small>If you have a preferred contact method other than e-mail, please let us know!</small>
+                </div>
+                <div class="row pt-4 pb-5">
+                  <div class="col">
+                    <div class="form-group">
+                        <input type="submit" class="index-buttons">
+                        <input type="reset" class="index-buttons ml-2">
+                    </div>
+                  </div>
+                </div>
+                
+
+              </form> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -95,5 +177,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Form controls -->
+    <script>
+    var form = document.getElementById('contact-form')
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated')
+    })
+    </script>
   </body>
 </html>

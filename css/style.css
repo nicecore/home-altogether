@@ -2,13 +2,13 @@
 
 #hero-background-2 {
     background: 
-        linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 255, 255, .9) 70%),
+        linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 255, 255) 75%),
         linear-gradient(to bottom, transparent 90%, white 99%),
         url("../photos/IMG_0048.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
 
 }

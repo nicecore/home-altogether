@@ -155,8 +155,8 @@ body, html {
 #hero-background {
     background: 
         linear-gradient(to top, transparent 0%, white 70%),
-        /* linear-gradient(to bottom, transparent 90%, white 95%), */
-        url("../photos/IMG_0048_cropped_2.jpg");
+        linear-gradient(to bottom, transparent 90%, white 95%),
+        url("../photos/IMG_0041.jpg");
     height: 400px;
     background-size: cover;
     background-position: center;

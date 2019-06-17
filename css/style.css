@@ -5,10 +5,10 @@
         linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 255, 255, .9) 70%),
         linear-gradient(to bottom, transparent 90%, white 99%),
         url("../photos/IMG_0048.jpg");
-    height: 800px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 
 
 }

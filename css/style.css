@@ -1,3 +1,21 @@
+/* Index 2 styles */
+
+#hero-background-2 {
+    background: 
+        linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 255, 255, .9) 70%),
+        linear-gradient(to bottom, transparent 90%, white 99%),
+        url("../photos/IMG_0048.jpg");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+
+}
+
+
+
+
 html {
     height: 100%;
 }
@@ -154,12 +172,14 @@ body, html {
 
 #hero-background {
     background: 
-        linear-gradient(to top, transparent 0%, white 70%),
-        linear-gradient(to bottom, transparent 90%, white 95%),
-        url("../photos/IMG_0041.jpg");
-    height: 500px;
+    linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 255, 255, .9) 70%),
+        linear-gradient(to bottom, transparent 95%, white 99%),
+        url("../photos/IMG_0041_cropped_2.jpg");
+    height: 400px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+
 
 }
 

@@ -75,80 +75,47 @@
               <img src="photos/IMG_0013.JPG" id="contact-main-photo" alt="" class="img-fluid pb-4 about-main-photo">
             </div>
             <div class="col-sm-12 col-md-6">
-              <form novalidate action="" id="contact-form" class="text-left needs-validation">
+              <form novalidate action="https://mailthis.to/adamdcameron@gmail.com" method="POST" id="contact-form" class="text-left needs-validation">
+                <input type="hidden" name="_after" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_honeypot" value="">
                 <div class="row">
                   <div class="col">
                     <div class="form-group">
                       <label for="firstName"><em>First Name</em></label>
-                      <input required type="text" name="firstName" class="form-control" id="firstName">
+                      <input required type="text" name="First Name" class="form-control" id="firstName">
+                      <div class="invalid-feedback">Please provide a first name.</div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-group">
                       <label for="lastName"><em>Last Name</em></label>
-                      <input required type="text" name="lastName" class="form-control" id="lastName">
+                      <input required type="text" name="Last Name" class="form-control" id="lastName">
+                      <div class="invalid-feedback">Please provide a last name.</div>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="email"><em>E-mail</em></label>
-                  <input required type="email" name="email" class="form-control" id="firstName">
+                  <input required type="email" name="_replyto" class="form-control" id="firstName">
+                  
+                  <div class="invalid-feedback">Please provide a valid e-mail.</div>
                 </div>
                 <div class="form-group">
                   <label for="firstName"><em>Message</em></label>
-                  <textarea required class="form-control" name="" id="" cols="30" rows="5"></textarea>
-                  <small>If you have a preferred contact method other than e-mail, please let us know!</small>
+                  <textarea required class="form-control" name="Message" id="" cols="30" rows="5"></textarea>
+                  <div class="invalid-feedback">Please enter a message.</div>
                 </div>
                 <div class="row pt-4 pb-5">
                   <div class="col">
                     <div class="form-group">
                       <input type="submit" class="index-buttons">
-                      <input type="reset" class="index-buttons ml-2">
+                      <input type="reset" id="reset-button" class="index-buttons ml-2">
+                      
                     </div>
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
-          
-          
-          <div class="row">
-            <div class="col">
-              <!-- <form novalidate action="" id="contact-form" class="text-left needs-validation">
-                <div class="row">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="firstName"><em>First Name</em></label>
-                      <input required type="text" name="firstName" class="form-control" id="firstName">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                        <label for="lastName"><em>Last Name</em></label>
-                        <input required type="text" name="lastName" class="form-control" id="lastName">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="email"><em>E-mail</em></label>
-                  <input required type="email" name="email" class="form-control" id="firstName">
-                </div>
-                <div class="form-group">
-                  <label for="firstName"><em>Message</em></label>
-                  <textarea required class="form-control" name="" id="" cols="30" rows="5"></textarea>
-                  <small>If you have a preferred contact method other than e-mail, please let us know!</small>
-                </div>
-                <div class="row pt-4 pb-5">
-                  <div class="col">
-                    <div class="form-group">
-                        <input type="submit" class="index-buttons">
-                        <input type="reset" class="index-buttons ml-2">
-                    </div>
-                  </div>
-                </div>
-                
-
-              </form> -->
+              <button id="get-button" class="index-buttons ml-2">Get</button>
             </div>
           </div>
         </div>
@@ -174,20 +141,53 @@
   <div id="overlay" onclick="closeNav()"></div>
     
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <!-- Form controls -->
     <script>
+    $('#get-button').click(function() {
+      $.ajax({
+        url: "https://httpbin.org/get",
+        type: 'get',
+      }).done(function(server_data) {
+        console.log(server_data)
+      })
+    })
+
+
+
+
     var form = document.getElementById('contact-form')
     form.addEventListener('submit', function(event) {
+      // If the form fields don't pass validation in the browser, stop the event.
       if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();
+      } else {
+        $.ajax({
+        url: 'https://mailthis.to/adamdcameron@gmail.com',
+        type: 'post',
+        data: $('#contact-form').serialize()
+        }).done(function(server_data) {
+          
+        }).fail(function() {
+          alert('fail')
+        })
       }
+      // In any case, add the .was-validated class from Bootstrap to show results
       form.classList.add('was-validated')
+      
     })
+
+    // Remove validation/validation error messages when user hits Reset button.
+    var resetBtn = document.getElementById('reset-button');
+    resetBtn.addEventListener('click', function() {
+      form.classList.remove('was-validated')
+    })
+
     </script>
+
   </body>
 </html>

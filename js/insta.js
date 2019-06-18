@@ -3,10 +3,10 @@
 $( document ).ready(function() {
   var userFeed = new Instafeed({
     get: 'user',
-    clientId: '9ba0fb8974e249c890692af4f53a9743',
-    userId: '11804221620',
+    clientId: '92c73b784e7b4543a2440cd26b9b9d2b',
+    userId: '7977225167',
     target: 'insta',
-    limit: 10,
+    limit: 5,
     resolution: 'thumbnail',
     accessToken: '11804221620.1677ed0.7e8a9cd1fb7a4b748d6421a05aa3df57',
     sortBy: 'most-recent',

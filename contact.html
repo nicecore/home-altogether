@@ -110,12 +110,10 @@
                     <div class="form-group">
                       <input type="submit" class="index-buttons">
                       <input type="reset" id="reset-button" class="index-buttons ml-2">
-                      
                     </div>
                   </div>
                 </div>
               </form>
-              <button id="get-button" class="index-buttons ml-2">Get</button>
             </div>
           </div>
         </div>
@@ -147,17 +145,6 @@
 
     <!-- Form controls -->
     <script>
-    $('#get-button').click(function() {
-      $.ajax({
-        url: "https://httpbin.org/get",
-        type: 'get',
-      }).done(function(server_data) {
-        console.log(server_data)
-      })
-    })
-
-
-
 
     var form = document.getElementById('contact-form')
     form.addEventListener('submit', function(event) {
@@ -170,8 +157,8 @@
         url: 'https://mailthis.to/adamdcameron@gmail.com',
         type: 'post',
         data: $('#contact-form').serialize()
-        }).done(function(server_data) {
-          
+        }).done(function() {
+          console.log("success")
         }).fail(function() {
           alert('fail')
         })

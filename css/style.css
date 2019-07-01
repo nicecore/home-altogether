@@ -237,27 +237,18 @@ body, html {
     height: 150px;
 }
 
-#parallax {
-    background-image:
-      linear-gradient(
+.parallax {
+    background-image: linear-gradient(
           rgba(238, 249, 255, .67),
           rgba(238, 249, 255, .67)
-    ),
-    url('../photos/IMG_0015.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
-}
-
-#parallax-container {
-    min-height: 600px;
+    );
+    height: 500px;
+    /* background: transparent; */
 }
 
 #quote {
     font-family: "Gill Sans";
     color: #4D4D4D;
-    
-
 }
 
 #quote-author {

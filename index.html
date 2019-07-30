@@ -25,57 +25,62 @@
     <!-- SideNav -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="services.html">Services</a>
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="index.html">home</a>
+      <a class="nav-link" href="about.html">about</a>
+      <a class="nav-link" href="services.html">services</a>
+      <a class="nav-link" href="portfolio.html">portfolio</a>
+      <a class="nav-link" href="contact.html">contact</a>
     </div>
     
     <!-- Header -->
 
-    <div class="" id="hero-background">
-      <div class="container-fluid pt-5 mb-4" id="header">
-        <div class="row">
-          <div class="col-sm">
-            <a id="logo-link" href="index.html"><img src="img/CIRCLE_GRAY.png" alt="Home Altogether logo" id="header-logo" width="150"></a>
-            <div id="nav-wrapper">
-              <ul id="navbar" class="nav m-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="alt-index.html">Home-2</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <span id="bean-burger" onclick="openNav()">&#9776;</span>
+    <div class="container-fluid mt-4 pt-4" id="header">
+      <div class="row">
+        <div class="col-sm">
+          <a href="index.html"><img src="img/CIRCLE_GRAY.png" width="100" alt="Home Altogether logo" id="header-logo"></a>
+          <div id="nav-wrapper">
+            <ul id="navbar" class="nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
           </div>
+          <span id="bean-burger" onclick="openNav()">&#9776;</span>
         </div>
       </div>
     </div>
 
+    <section class="main-background" id="photo-showcase">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md text-center showcase-column pr-0"><img src="photos/IMG_0002.JPG" alt=""
+              class="showcase-photos"></div>
+          <!-- <div class="col-md text-center showcase-column pl-0"><img src="photos/IMG_0004.JPG" alt="" class="showcase-photos"></div> -->
+        </div>
+      </div>
+    </section>
 
     <section class="" id="details">
         <div class="row">
             <div class="col-sm text-center">
               <img id="main-logo" class="mb-2" src="img/MAIN_GRAY.png" width="400" alt="">
-              <h3 id="index-subtitle" class="px-4 m-auto main-fonts pt-4">Beautiful, maintanable, individually tailored organizational solutions.</h3>
+              <h3 id="index-subtitle" class="px-4 m-auto pt-4">Beautiful, maintanable, individually tailored organizational solutions.</h3>
             </div>
         </div>
     </section>
+
     <section class="main-background main-fonts py-2">
         <div class="row no-gutters">
           <div class="col-lg-4 mb-4 text-center py-4">
@@ -83,7 +88,7 @@
               <img src="photos/IMG_0001.JPG" height="230" alt="" class="index-round-img">
             </div>
             <p class="index-paras text-center w-75 m-auto pb-5">Hello! We are Maribeth and Leah, sisters-in-law and friends with a passion for organization. Our mission is to make your space the most pleasant place.</p>
-            <a class="index-buttons main-fonts" href="about.html"><strong>Learn more about us</strong></a>
+            <a class="index-buttons main-fonts" href="about.html">Learn more about us</a>
           </div>
 
           <div class="col-lg-4 mb-4 text-center services-cols py-4">
@@ -91,7 +96,7 @@
               <img src="photos/IMG_0008.JPG" height="230" alt="" class="index-round-img index-round-mid-img">
             </div>
             <p class="text-center index-paras w-75 m-auto pb-5">A well-organized home is a healthier, more resilient home, all the more ready for life's challenges. That's why we pour our heart and soul into every project, from start to finish.</p>
-            <a class="index-buttons main-fonts" href="services.html"><strong>Read about our process</strong></a>
+            <a class="index-buttons main-fonts" href="services.html">Read about our process</a>
           </div>
 
           <div class="col-lg-4 mb-4 text-center services-cols py-4">
@@ -99,7 +104,7 @@
               <img src="photos/kikicloset.JPG" height="230" alt="" class="index-round-img">
             </div>
             <p class="index-paras text-center w-75 m-auto pb-5">With our powers combined, we are an unstoppable force of home organization. Our work speaks for itself - take a look!</p>
-            <a class="index-buttons main-fonts" href="portfolio.html"><strong>See our expertise at work</strong></a>
+            <a class="index-buttons main-fonts" href="portfolio.html">See our expertise at work</a>
           </div>
         </div>
       </section>
@@ -109,8 +114,8 @@
       <section>
         <div class="parallax" data-speed="0.4" data-parallax="scroll" data-image-src="../photos/IMG_0015.JPG" data-iosFix="true" data-androidFix="true">
           <div class="row h-100">
-            <div class="col text-center my-auto">
-              <em><h1 id="quote" class="pb-3"></h1></em>
+            <div class="col my-auto">
+              <em><h1 id="quote" class="pb-3 w-75 m-auto"></h1></em>
               <h3 id="quote-author"></h3>
             </div>
           </div>
@@ -138,7 +143,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col pb-5">
-            <h3 class="text-center mt-5 main-fonts">Follow us on Instagram!</h3>
+            <h3 class="text-center mt-5 header-fonts">Follow us on Instagram!</h3>
             <div class="insta-wrapper">
               <div id="insta" class="">
 

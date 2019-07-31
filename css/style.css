@@ -324,13 +324,9 @@ body, html {
     font-size: 2.3rem;
 }
 
-#about-us {
-    margin-bottom: 0;
-}
-
 #about-divider {
-    margin-top: 130px;
-    height: 200px;
+    margin-top: 12%;
+    height: 180px;
 }
 
 .subpage-paragraph {
@@ -459,6 +455,7 @@ body, html {
 @media screen and (max-width: 1000px) {
     #about-profile-cards-div {
         margin: 0 auto;
+        margin-top: 5% !important;
         padding-left: 0;
         padding-right: 0;
     }
@@ -478,7 +475,7 @@ body, html {
 
 @media screen and (max-width: 930px) {
     #about-transition-header {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 
@@ -518,4 +515,38 @@ body, html {
     #subpage-paragraph {
         width: 95%;
     }
+}
+
+@media screen and (max-width: 403px) {
+
+    .header-fonts {
+        font-size: 2.5rem;
+    }
+
+    #main-logo {
+        width: 70%;
+        margin-top: 20px;
+        padding-bottom: 1.3rem;
+    }
+    #index-subtitle {
+        font-size: .9rem;
+        padding-top: .5rem !important;
+    }
+
+    #details {
+        min-height: 250px;
+    }
+
+    #insta-header {
+        font-size: 1.5rem;
+    }
+
+    #quote, #quote-author {
+        font-size: 1.5rem;
+    }
+
+    #about-profile-cards-div {
+        margin-top: 15% !important;
+    }
+
 }

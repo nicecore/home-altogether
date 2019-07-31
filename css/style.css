@@ -38,6 +38,10 @@ body {
     top: 3px;
 }
 
+.spacing {
+    letter-spacing: 1.3px;
+}
+
 #index-subtitle {
     font-family: "Gill Sans";
     font-weight: lighter;
@@ -78,16 +82,16 @@ body {
     margin-left: 10px;
     margin-bottom: 20px;
     text-decoration: none;
-    color: #9f9d9d;
+    color: #9f9d9d;`
 }
 
 #nav-wrapper {
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 50px;
 }
 
 .nav-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Gill Sans";
     font-weight: 100;
     letter-spacing: 1px;
@@ -311,13 +315,17 @@ body, html {
     max-width: 600px;
 }
 
+#about-transition-header {
+    font-size: 2.3rem;
+}
+
 #about-us {
     margin-bottom: 0;
 }
 
 #about-divider {
     margin-top: 130px;
-    height: 250px;
+    height: 200px;
 }
 
 .subpage-paragraph {
@@ -432,7 +440,7 @@ body, html {
 
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 880px) {
     /* Hide #nav-wrapper and set beanburger's display to inline 
     on screens smaller than 1100px */
     #nav-wrapper {
@@ -460,6 +468,12 @@ body, html {
     .index-paras {
         height: auto;
         width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #about-transition-header {
+        font-size: 1.8rem;
     }
 }
 

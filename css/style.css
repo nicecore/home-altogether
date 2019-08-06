@@ -21,6 +21,10 @@
     color: #6b6b6b;
 }
 
+.larger-fonts {
+    font-size: 2.3rem;
+}
+
 html {
     height: 100%;
 }
@@ -61,6 +65,15 @@ body {
     margin-left: calc(50% - 50px);
 }
 
+#main-photo {
+    height: 800px;
+    background-image: url("../photos/IMG_0062.JPG");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
 
 .sidenav {
     height: 100vh;
@@ -97,6 +110,7 @@ body {
     letter-spacing: 1px;
     color: #9f9d9d;
     padding: 8px 4px;
+    padding-right: 12px;
     transition: color 400ms;
 }
 
@@ -138,10 +152,6 @@ body {
 .index-round-mid-img {
     margin-left: -150px;
     /* margin-top: -20px; */
-}
-
-#crayons {
-    transform: scale(1.4);
 }
 
 .insta-image {
@@ -231,7 +241,9 @@ body, html {
 }
 
 .showcase-photos {
-    max-width: 85%;
+    object-fit: fill;
+    height: auto;
+    width: auto;
     opacity: .7;
 }
 
@@ -257,7 +269,7 @@ body, html {
           rgba(238, 249, 255, .67),
           rgba(238, 249, 255, .67)
     );
-    height: 400px;
+    height: 500px;
     /* background: transparent; */
 }
 
@@ -314,6 +326,14 @@ body, html {
     opacity: 0.8;
 }
 
+#photo-showcase {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
 
 .about-main-photo {
     width: 90%;
@@ -396,6 +416,25 @@ body, html {
     border-radius: 2%;
 }
 
+.step-icons {
+    margin-top: -30px;
+}
+
+#steps {
+    min-height: 600px;
+}
+
+#first-step-icon {
+    position: absolute;
+    left: 100px;
+
+}
+
+#second-step-icon {
+    position: absolute;
+    right: 0px;
+}
+
 
 #pricing-ul {
     text-align: left;
@@ -441,7 +480,7 @@ body, html {
 
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 945px) {
     /* Hide #nav-wrapper and set beanburger's display to inline 
     on screens smaller than 1100px */
     #nav-wrapper {

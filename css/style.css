@@ -235,8 +235,8 @@ body, html {
 
 #details {
     /* background: linear-gradient(to bottom, white 90%, #EFEAE9); */
-    padding-top: 5%;
-    padding-bottom: 6%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     min-height: 300px;
 }
 
@@ -406,7 +406,7 @@ body, html {
 }
 
 .service-paras {
-    max-width: 300px;
+    max-width: 40%;
     min-width: 260px;
 }
 
@@ -432,7 +432,7 @@ body, html {
 
 #second-step-icon {
     position: absolute;
-    right: 0px;
+    right: 100px;
 }
 
 
@@ -509,6 +509,18 @@ body, html {
     .index-paras {
         height: auto;
         width: 70% !important;
+    }
+
+    .step-icons {
+        width: 20%;
+    }
+
+    #first-step-icon {
+        left: 20px;
+    }
+
+    #second-step-icon {
+        right: 20px;
     }
 }
 

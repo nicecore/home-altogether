@@ -1,4 +1,4 @@
-
+$('.parallax').paroller();
 
 $( document ).ready(function() {
   var userFeed = new Instafeed({

@@ -265,12 +265,12 @@ body, html {
 }
 
 .parallax {
-    background-image: linear-gradient(
-          rgba(238, 249, 255, .67),
-          rgba(238, 249, 255, .67)
-    );
-    height: 500px;
-    /* background: transparent; */
+    background: 
+        linear-gradient(rgba(238, 249, 255, .67), rgba(238, 249, 255, .67)),
+        url("../photos/IMG_0015.JPG") repeat top;
+    background-size: cover;
+
+    height: 400px;
 }
 
 #quote {
@@ -551,12 +551,28 @@ body, html {
     #contact-form {
         margin: 0 auto;
     }
+
+    .parallax {
+        height: 300px;
+    }
+    #quote {
+        font-size: 1.5em;
+    }
+
+    #quote-author {
+        font-size: 1em;
+    }
+    
 }
 
 @media screen and (max-width: 650px) {
     #index-subtitle {
         font-size: 1.2rem;
         width: 100%;
+    }
+
+    .parallax {
+        height: 200px;
     }
 }
 

@@ -476,10 +476,6 @@ body, html {
     }
 }
 
-@media screen and (min-width: 1170px) {
-
-}
-
 @media screen and (max-width: 945px) {
     /* Hide #nav-wrapper and set beanburger's display to inline 
     on screens smaller than 1100px */
@@ -508,7 +504,7 @@ body, html {
 @media screen and (max-width: 991px) {
     .index-paras {
         height: auto;
-        width: 70% !important;
+        width: 60% !important;
     }
 
     .step-icons {
@@ -565,6 +561,13 @@ body, html {
     
 }
 
+@media screen and (max-width: 720px) {
+    .image-wrapper {
+        height: 180px;
+        width: 180px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     #index-subtitle {
         font-size: 1.2rem;
@@ -573,6 +576,11 @@ body, html {
 
     .parallax {
         height: 200px;
+    }
+
+    .index-paras {
+        height: auto;
+        width: 70% !important;
     }
 }
 

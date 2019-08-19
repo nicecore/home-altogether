@@ -457,6 +457,26 @@ body, html {
     max-width: 450px;
 }
 
+.form-control {
+    border: 0;
+    border-bottom: 1px solid #6b6b6b;
+    border-radius: 0;
+    background: transparent;
+    padding-left: 0;
+    font-family: inherit;
+    font-family: "Gill Sans";
+    font-weight: lighter;
+    color: #6b6b6b;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
 /* OVERRIDE BOOTSTRAP STYLES */
 
 .card {

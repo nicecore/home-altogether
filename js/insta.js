@@ -7,10 +7,10 @@ $( document ).ready(function() {
     userId: '7977225167',
     target: 'insta',
     limit: 10,
-    resolution: 'thumbnail',
+    resolution: 'standard_resolution',
     accessToken: '7977225167.ae1c425.3bce55b4df3f4e409cb51122bc52f4af',
     sortBy: 'most-recent',
-    template: '<div><a href="{{link}}"><img class="mx-auto insta-image" width=200 src="{{image}}"/></a></div>',
+    template: '<div><a href="{{link}}"><img class="mx-auto insta-image" width=200 height=200 src="{{image}}"/></a></div>',
     links: true,
     after: function() {
       $('#insta').slick({
@@ -40,8 +40,8 @@ $( document ).ready(function() {
           {
             breakpoint: 715,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               dots: false
             }
           }

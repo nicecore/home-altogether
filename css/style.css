@@ -123,7 +123,7 @@ body {
 }
 
 #insta {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -560,6 +560,11 @@ body, html {
     #index-subtitle {
         font-size: 1.3rem;
     }
+
+    .insta-image {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -656,8 +661,8 @@ body, html {
     }
 
     .insta-image {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
     }
     #insta {
         width: 90%;

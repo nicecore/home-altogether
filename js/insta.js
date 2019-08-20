@@ -23,26 +23,33 @@ $( document ).ready(function() {
           {
             breakpoint: 1380,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 4,
               infinite: true,
               dots: true
             }
           },
           {
-            breakpoint: 950,
+            breakpoint: 1060,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 3,
               dots: false
             }
           },
           {
-            breakpoint: 715,
+            breakpoint: 800,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 4,
+              slidesToScroll: 4,
               dots: false
+            }
+          },
+          {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
             }
           }
         ]

@@ -1,3 +1,6 @@
+
+
+
 /* Index 2 styles */
 
 #hero-background-2 {
@@ -601,6 +604,14 @@ body, html {
 }
 
 @media screen and (max-width: 650px) {
+
+    html, body {
+    overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
     #index-subtitle {
         font-size: 1.2rem;
         width: 100%;

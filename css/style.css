@@ -605,10 +605,6 @@ body, html {
 
 @media screen and (max-width: 650px) {
 
-    html, body {
-    overflow-x: hidden;
-    }
-
     #index-subtitle {
         font-size: 1.2rem;
         width: 100%;

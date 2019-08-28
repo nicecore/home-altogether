@@ -345,6 +345,10 @@ body, html {
 
 }
 
+.about-lettering {
+    height: 70px;
+}
+
 .about-main-photo {
     width: 90%;
     max-width: 600px;
@@ -517,6 +521,18 @@ body, html {
     }
 }
 
+@media screen and (max-width: 1040px) {
+    .step-icons {
+        height: 120px;
+    }
+
+    .service-headers {
+        font-size: 1.7rem;
+    }
+
+    
+}
+
 @media screen and (max-width: 1000px) {
     #about-profile-cards-div {
         margin: 0 auto;
@@ -618,10 +634,23 @@ body, html {
         height: auto;
         width: 70% !important;
     }
+
+    #second-step-icon {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #final-service-header {
+        padding-top: 70px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
-
+    #about-transition-header {
+        font-size: 1.6rem;
+        width: 100%;
+    }
 }
 
 
@@ -629,12 +658,30 @@ body, html {
     #subpage-paragraph {
         width: 95%;
     }
+
+    .about-lettering {
+        height: 50px;
+        margin-top: 40px !important;
+    }
+
+    .card-text {
+        padding-left: 30px !important;
+    }
+
+    .card-body {
+        padding: 0 !important;
+    }
 }
 
 @media screen and (max-width: 403px) {
 
     .header-fonts {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        width: 95%;
+    }
+
+    .subheaders {
+        font-size: 1.2rem;
     }
 
     #main-logo {
@@ -670,6 +717,11 @@ body, html {
     }
     #insta {
         width: 90%;
+    }
+
+
+    #first-step-icon {
+        margin-top: -40px;
     }
 
 }

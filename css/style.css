@@ -662,6 +662,7 @@ body, html {
     .about-lettering {
         height: 50px;
         margin-top: 40px !important;
+        margin-bottom: 1rem !important;
     }
 
     .card-text {

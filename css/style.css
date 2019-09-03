@@ -68,6 +68,10 @@ body {
     margin-left: calc(50% - 50px);
 }
 
+.subheaders {
+        font-size: 1.5rem;
+    }
+
 #main-photo {
     height: 800px;
     background-image: url("../photos/IMG_0062.JPG");
@@ -298,6 +302,7 @@ body, html {
 
 .main-fonts {
     font-family: "Gill Sans";
+    /* better with Didot??? Ask */
     font-weight: lighter;
     /* color: #4D4D4D; */
     color: #6b6b6b;

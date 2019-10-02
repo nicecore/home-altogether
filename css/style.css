@@ -68,6 +68,11 @@ body {
     margin-left: calc(50% - 50px);
 }
 
+.contained {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .subheaders {
         font-size: 1.5rem;
     }

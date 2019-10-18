@@ -79,7 +79,7 @@ body {
 
 #main-photo {
     height: 800px;
-    background-image: url("../photos/IMG_0062.JPG");
+    background-image: url("../photos/IMG_0062copy.JPG");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ body, html {
         url("../photos/IMG_0015.JPG") repeat top;
     background-size: cover;
 
-    height: 400px;
+    height: 500px;
 }
 
 #quote {
@@ -356,7 +356,7 @@ body, html {
 }
 
 .about-lettering {
-    height: 70px;
+    height: 80px;
 }
 
 .about-main-photo {
@@ -653,6 +653,9 @@ body, html {
 @media screen and (max-width: 560px) {
     #final-service-header {
         padding-top: 70px !important;
+    }
+    #main-photo {
+        height: 400px;
     }
 }
 

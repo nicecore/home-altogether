@@ -1,0 +1,38 @@
+<!-- old form -->
+<form novalidate action="https://mailthis.to/home-altogether@gmail.com" method="POST" id="contact-form"
+    class="text-left m-auto needs-validation">
+    <div class="form-group">
+        <!-- <label for="firstName"><em>First Name</em></label> -->
+        <input placeholder="First Name" required type="text" name="First Name" class="form-control" id="firstName"
+            autocorrect="off">
+        <div class="invalid-feedback">Please provide a first name.</div>
+    </div>
+    <div class="form-group">
+        <!-- <label for="lastName"><em>Last Name</em></label> -->
+        <input placeholder="Last Name" required type="text" name="Last Name" class="form-control" id="lastName"
+            autocorrect="off">
+        <div class="invalid-feedback">Please provide a last name.</div>
+    </div>
+    <div class="form-group">
+        <!-- <label for="email"><em>E-mail</em></label> -->
+        <input placeholder="E-mail" required type="email" name="_replyto" class="form-control" id="firstName"
+            autocorrect="off">
+        <div class="invalid-feedback">Please provide a valid e-mail.</div>
+    </div>
+    <div class="form-group">
+        <!-- <label for="firstName"><em>Message</em></label> -->
+        <textarea placeholder="Talk to us!" required class="form-control" name="Message" id="" cols="30" rows="3"
+            autocorrect="off"></textarea>
+        <div class="invalid-feedback">Please enter a message.</div>
+    </div>
+    <div class="row pt-4 pb-5">
+        <div class="col">
+            <div class="form-group">
+                <input type="submit" value="Send" class="index-buttons main-fonts">
+                <input type="reset" id="reset-button" class="index-buttons main-fonts ml-2">
+                <input type="hidden" name="_after" value="https://practical-lamarr-47d9d0.netlify.com/index.html/">
+                <input type="hidden" name="_honeypot" value="">
+            </div>
+        </div>
+    </div>
+</form>

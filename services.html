@@ -6,14 +6,14 @@
     <meta name="description" content="Home Altogether Homepage">
     <meta name="author" content="Adam Cameron">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>Services</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="loadNewQuote()">
 
     <!------- HEADER ------->
     
@@ -80,6 +80,19 @@
               </div>
               <div class="col"><hr class="about-hrs" align="left" width="50%"></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="parallax" data-paroller-factor=".3" data-paroller-type="background" data-paroller-direction="vertical">
+        <div class="row h-100">
+          <div class="col my-auto">
+            <em>
+              <h1 id="quote" class="pb-3 w-75 m-auto"></h1>
+            </em>
+            <h3 id="quote-author"></h3>
           </div>
         </div>
       </div>
@@ -218,84 +231,6 @@
       </div>
     </section>
 
-
-
-    <!-- <section class="main-background pb-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col main-fonts">
-            <p class="pt-5 display-4 text-center m-auto header-fonts pb-3 spacing" id="process-pricing">PROCESS and PRICING</p>
-            <div class="row pb-4">
-              <div class="col"><hr class="about-hrs" align="right" width="50%"></div>
-              <div class="col-auto">
-                <img src="img/thingy.svg" alt="">
-              </div>
-              <div class="col"><hr class="about-hrs" align="left" width="50%"></div>
-            </div>
-            
-
-            <h2 class="text-center pt-3 pb-3"><u>Our Process</u></h2>
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <h4 class="text-center m-auto pt-2 pb-2">Step 1: Consultation</h4>
-                <p class="m-auto pb-4 service-paras">We want to see what we are working with and get a sense of your individual needs and personal style before we jump in. We prefer to do an in-person consultation when possible, but if that isn’t feasible, we will do a FaceTime consultation.</p>
-              </div>
-              <div class="col-lg-4 col-sm-12">
-                <h4 class="text-center m-auto pt-2 pb-2">Step 2: Plan and Purchase</h4>
-                <p class="m-auto pb-4 service-paras">After our consultation, we will take some time to plan out what we want to do, how much time we need to do it, and how much we need to spend on supplies. After confirming everything with you, we will then purchase what we need to complete the project.</p>
-              </div>
-              <div class="col-lg-4 col-sm-12">
-                <h4 class="text-center m-auto pt-2 pb-2">Step 3: Organize and Implement</h4>
-                <p class="m-auto pb-3 service-paras">We will come to your home and get everything taken care of! We will haul away any donations and trash for you so you will be left with a beautiful, efficient space.</p>
-              </div>
-            </div>
-
-
-
-
-
-            <div class="mx-auto process-wrapper mb-5">
-              <h2 class="text-center pt-3 pb-3"><u>Our Process</u></h2>
-              <h4 class="text-center m-auto pb-2">Step 1: Consultation</h4>
-              <p class="m-auto pb-4 service-paras">We want to see what we are working with and get a sense of your individual needs and personal style before we jump in. We prefer to do an in-person consultation when possible, but if that isn’t feasible, we will do a FaceTime consultation.</p>
-              <h4 class="text-center m-auto pt-2 pb-2">Step 2: Plan and Purchase</h4>
-              <p class="m-auto pb-4 service-paras">After our consultation, we will take some time to plan out what we want to do, how much time we need to do it, and how much we need to spend on supplies. After confirming everything with you, we will then purchase what we need to complete the project.</p>
-              <h4 class="text-center m-auto pt-2 pb-2">Step 3: Organize and Implement</h4>
-              <p class="m-auto pb-3 service-paras">We will come to your home and get everything taken care of! We will haul away any donations and trash for you so you will be left with a beautiful, efficient space.</p>
-            </div>
-
-            <div class="mx-auto process-wrapper pb-3">
-              <h2 class="text-center pt-3 pb-3"><u>Pricing</u></h2>
-              <p class="m-auto pb-4 service-paras">Before we talk numbers, let’s discuss what you’re getting when you purchase a package with <strong>Home Altogether</strong>:</p>
-              <ul class="mx-auto service-paras" id="pricing-ul">
-                <li>Two hands-on organization experts</li>
-                <li>In-depth consultation</li>
-                <li>We facilitate all purchases and returns</li>
-                <li>At the end of the day, we haul away all donations and trash</li>
-                <li>You get to sit back and drink your coffee while we do the hard work!</li>
-              </ul>
-              <p class="service-paras text-left m-auto pb-2"><strong>DFW Pricing:</strong> $70/hour + the cost of supplies</p>
-              <p class="service-paras text-left m-auto pb-2"><strong>Out Of Town Pricing:</strong> $80/hour + the cost of supplies, travel, and accommodation.*</p>
-              <p class="service-paras text-left m-auto pt-3"><strong>CONSULTATION FEE:</strong> $75 – credited towards your total payment when you decide to continue with us.</p>
-              <br>
-              <p class="service-paras text-center m-auto"><em>*We are lucky enough to have family in Tulsa and Houston, so if your project is in one of those cities, you won’t need to pay for our accommodations.</em></p>
-            </div>
-            
-            <div class="row pt-5 pb-4">
-              <div class="col"><hr class="about-hrs" align="right" width="50%"></div>
-              <div class="col-auto">
-                <img src="img/thingy.svg" alt="">
-              </div>
-              <div class="col"><hr class="about-hrs" align="left" width="50%"></div>
-            </div>
-            
-          </div>
-        </div>
-        <h4 class="text-center pt-5 m-auto main-fonts">Fill out our <a href="contact.html" style="color: black;">contact form</a> or send us an <a href="mailto:home.altogether@gmail.com" style="color: black;">e-mail</a> to schedule your consultation today!</h4>
-
-      </div>
-    </section> -->
-
     <footer class="container-fluid" id="footer">
       <div class="row">
         <div class="col-sm text-center">
@@ -307,8 +242,15 @@
     </footer>
 
     <div id="overlay" onclick="closeNav()"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
+    <script type="text/javascript" src="js/insta.js"></script>
   </body>
 </html>

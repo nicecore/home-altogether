@@ -78,12 +78,8 @@ body {
     }
 
 #main-photo {
-    height: 800px;
-    background-image: url("../photos/IMG_0062copy.JPG");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
     opacity: 0.9;
+    width: 75%;
 }
 
 
